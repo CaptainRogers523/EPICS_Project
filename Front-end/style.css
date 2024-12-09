@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 80px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, rgba(139, 69, 19, 0.9), rgba(139, 69, 19, 0.6));
+    color: #f7f1e1; /* Light Cream */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.menu ul {
+  display: flex;
+  gap: 15px;
+  list-style: none; 
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: #f7f1e1;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+  color: #000000; /* Dark Orange */
+  transition: color 0.3s ease;
+} 
+
+/* Navigation Styling */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a, #login-btn {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+#login-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/***********************/
+
+.signup a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    padding: 12px 30px;
+    border: 2px solid #93e748;
+}
+
+.signup a:hover {
+    background-color: rgba(108, 212, 28, 0.751);
+    transition: 0.6s;
+}
+
+
+.grid-container {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  right: 5%; /* Align to the right corner */
+  transform: translateY(-50%); /* Offset vertical centering */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+  gap: 20px; /* Space between cards */
+}
+
+.backgroundimg {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: url('images/agriculture-pictures-ppsj59vfqlop02h9.jpg') no-repeat center center/cover;
+}
+
+.card {
+  width: 250px; 
+  height: 250px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 15px;
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.3s;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+  position: relative; /* To position the dimming overlay */
+}
+
+/* Add dimmed overlay to the card background */
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dim background with a transparent black */
+  z-index: 1; /* Ensure overlay stays behind the text */
+  border-radius: 10px;
+}
+
+/* Make sure headings stay on top of the overlay */
+.card h5 {
+  font-size: 1.5rem; /* Larger size for the heading */
+  font-weight: bold;
+  z-index: 2; /* Ensure heading is on top */
+  margin: 0;
+}
+
+/* Paragraph text styling */
+.card p {
+  font-size: 1rem;
+  z-index: 2; /* Ensure paragraph stays on top */
+  margin: 0;
+}
+
+/* Individual card background images */
+.card1 {
+  background-image: url('images/cardimg1.jpeg');
+}
+
+.card2 {
+  background-image: url('images/cardimg2.jpeg');
+}
+
+.card3 {
+  background-image: url('images/cardimg3.jpeg');
+}
+
+.card4 {
+  background-image: url('images/cardimg4.jpeg');
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* Media Query for screens smaller than 768px */
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    gap: 15px;
+  }
+
+  .card {
+    height: 200px; /* Adjust the card height for smaller screens */
+  }
+}
+
+
+/* Footer container */
+.footer {
+  position: absolute; /* Keeps it at the bottom of the page */
+  bottom: 0;
+  width: 100%; /* Ensures full width of the page */
+  text-align: center; /* Centers the content horizontally */
+  padding: 10px 0; /* Adds some padding for better spacing */
+  background: linear-gradient(to top, #6f4f1f, #8b5a2b); /* Brown gradient */
+}
+
+/* Footer link styles */
+.footer a {
+  text-decoration: none;
+  color: #f7f1e1; /* Light color for text */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer a {
+  transition: all 0.5s ease-out;
+  transition: 200ms linear 50ms;
+}
+
+.footer a:hover {
+  color: #b0e57c; /* Light green on hover */
+}
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+
+  --first-color: hsl(82, 60%, 28%);
+  --title-color: hsl(0, 0%, 15%);
+  --text-color: hsl(0, 0%, 35%);
+  --body-color: hsl(0, 0%, 95%);
+  --container-color: hsl(0, 0%, 100%);
+  --body-font: "Poppins", sans-serif;
+  --h2-font-size: 1.25rem;
+  --small-font-size: .813rem;
+}
+
+@media screen and (min-width: 1120px) {
+  :root {
+    --h2-font-size: 1.5rem;
+    --small-font-size: .875rem;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.info{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;}
+ 
+.plants{
+	display: inline;
+	text-align: center;
+	border-radius: 12px;
+}

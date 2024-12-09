@@ -1,0 +1,136 @@
+/* Global Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px); /* Ensures proper alignment below navbar */
+    padding: 20px;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Navbar Styling */
+.navbar {
+    width: 100%;
+    height: 80px;
+    font-weight: bold;
+    background: linear-gradient(to bottom, rgba(139, 69, 19, 0.9), rgba(139, 69, 19, 0.6));
+    color: #f7f1e1; /* Light Cream */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #f7f1e1;
+    padding: 5px 12px;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    color: #000000; /* Dark Orange */
+    transition: color 0.3s ease;
+}
+
+#login-btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#login-btn:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    color: #fff; /* White text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for better readability */
+    text-align: center;
+    max-width: 80%; /* Optional: Limit the text width for better display */
+}
+
+.text-overlay h1 {
+    font-size: 48px; /* Larger heading text */
+    margin-bottom: 15px;
+}
+
+.text-overlay p {
+    font-size: 20px; /* Paragraph text size */
+    line-height: 1.5;
+}
+
+/* About Section */
+.about-container {
+    max-width: 2100px;
+    max-height: 2000px;
+    display: flex;
+    margin: -20px fill; /* Centers the container horizontally */
+    padding: 400px;
+    background: url('images/agriculture-pictures-ppsj59vfqlop02h9.jpg') no-repeat center center/cover;
+    box-shadow: 0 6px 30px rgba(255, 255, 255, 0.979);
+    border-radius: 8px;
+    border-color: #ffffff;
+    text-align: justify;
+    color: #fff;
+
+    /* Center alignment fix */
+    display: flex;
+    flex-direction: column; /* Ensures content stacks properly */
+    justify-content: left; /* Centers vertically */
+    align-items: center; /* Centers text horizontally within container */
+}
+
+/* Footer Styling */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: linear-gradient(to right, rgba(139, 69, 19, 0.9), rgba(139, 69, 19, 0.6));
+    color: #f7f1e1;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #f7f1e1;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #b0e57c;
+    transition: 0.3s ease;
+}
