@@ -10,6 +10,20 @@ body, html {
     height: 100%;
 }
 
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Spacing between logo and site name */
+}
+
+/* Site Logo Styling */
+.site-logo {
+  width: 70px; /* Adjust the size of the logo */
+  height: 70px;
+  border-radius: 50%; /* Optional: Makes the logo circular */
+}
+
 .navbar {
     width: 100%;
     height: 80px;
