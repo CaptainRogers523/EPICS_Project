@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2:700');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures consistent box model */
+}
+
+body {
+  display: flex;
+  flex-direction: column; /* Stacks content vertically */
+  min-height: 0; /* Ensures the body takes full viewport height */
+  background: url("images/istockphoto-1402801804-612x612.jpg");
+  background-color: #212121;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+h1 {
+  color: whitesmoke;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 65px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p {
+  max-width: 1200px;
+  color: whitesmoke;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 1.0; /* Adjusts line height for better readability */
+  margin: 0px auto; /* Center aligns with some spacing */
+  margin-top: 200px;
+}
+
+.footer {
+  margin-top: 500px; /* Push footer to the bottom */
+  background-color: transparent; /* Removes gray background */
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+}
